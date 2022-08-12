@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+
+<body>
+<h1>BẢNG CỬU CHƯƠNG</h1>
+<table id="show" border="1">
+
+</table>
+<script>
+    let tr = " ";
+    let i, j;
+    for (i = 1; i < 11; i++) {
+        tr = tr + "<tr>";
+        for (j = 1; j < 11; j++) {
+            tr = tr + "<td>" + i + "*" + j + "=" + (i * j) + "</td>";
+        }
+        tr = tr + "</tr>";
+    }
+    document.getElementById("show").innerHTML = tr;
+</script>
+
+
+</body>
+</html>
