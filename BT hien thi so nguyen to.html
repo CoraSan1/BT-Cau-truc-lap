@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Nguyen To</title>
+</head>
+<body>
+<script>
+    let so_luong_snt = prompt("nhap so so nguyen to: ")
+    let dem = 0
+    let number = 2
+    while(dem < so_luong_snt ) {
+        let count  = 0;
+        for (let i = 1; i <= number ; i++) {
+            if (number % i === 0){
+                count++;
+            }
+        }
+        if (count === 2){
+            dem++;
+            document.write(number + "<br>");
+        }
+        number++;
+    }
+
+</script>
+</body>
+</html>
